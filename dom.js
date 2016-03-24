@@ -21,7 +21,7 @@ function _extends(Class,Super){
 		pt.__proto__ = ppt;
 	}
 	if(!(pt instanceof Super)){
-		function t(){};
+		var t = ()=>{};
 		t.prototype = Super.prototype;
 		t = new t();
 		copy(pt,t);
